@@ -9,7 +9,7 @@ class Heap:
     pass
 
   def get_max(self):
-    return storage[0]
+    return self.storage[0]
 
   def get_size(self):
     pass

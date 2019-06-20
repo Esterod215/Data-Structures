@@ -49,7 +49,19 @@ class BinarySearchTree:
 
 
   def for_each(self, cb):
-    cb = self.value
+    cb(self.value)
+    if self.left is None and self.right is None:
+      return
+    
+    else:
+      if self.left is not None:
+        self.left.for_each(cb)
+      elif self.right is not None:
+        self.right.for_each(cb)
+      
+
+    return
+
 
 # test for contains function
 BST = BinarySearchTree(7)

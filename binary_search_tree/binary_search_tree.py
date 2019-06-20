@@ -39,7 +39,7 @@ class BinarySearchTree:
 
   def get_max(self):
     current_max = self.value
-    print(current_max)
+    
     if self.right is not None:
       return self.right.get_max()
 
@@ -49,7 +49,7 @@ class BinarySearchTree:
 
 
   def for_each(self, cb):
-    pass
+    cb = self.value
 
 # test for contains function
 BST = BinarySearchTree(7)
